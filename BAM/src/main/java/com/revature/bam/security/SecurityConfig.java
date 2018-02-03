@@ -62,10 +62,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	 @Override
 	 public void configure(WebSecurity web) throws Exception {
 		// Ignore certain URLs.
+<<<<<<< HEAD
 		web.ignoring().antMatchers("/index.html", "/static/**", "/" , "/**");
+=======
+		web.ignoring().antMatchers("/index.html", "/static/**", "/", "/**");
+>>>>>>> 8fe99aa4594cc68d9ddef104c4823d10b3c7fea9
 	 }
 
-
+	 
 	/***
 	 * @author Nam Mai
 	 * References the authProvider to enable hashing
